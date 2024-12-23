@@ -1,9 +1,5 @@
 # Práctica Integradora - Bandas de Música
 
-## Introducción
-
-Te han solicitado programar la sección de los detalles de las bandas para un proyecto de música online. Para esto sigue las instrucciones planteadas a continuación. ¡Mucha suerte!
-
 ## Consigna
 
 ### 1. Utilizando express-generator crea un nuevo proyecto con nombre a elección.
