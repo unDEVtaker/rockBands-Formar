@@ -1,0 +1,98 @@
+body {
+  font-family: monospace;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Usar Flexbox para los elementos de la lista */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan a la siguiente línea */
+  justify-content: center; /* Centrar los elementos horizontalmente */
+}
+
+li {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  flex: 0 1 200px; /* Ajustar el tamaño de los elementos de la lista */
+}
+
+img {
+  max-width: 100%; /* Ajustar el tamaño máximo de las imágenes */
+  height: auto;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #f8058b;
+}
+
+/* Estilos específicos para la vista de detalle de banda */
+.detalle-banda img {
+  display: block;
+  margin: 0 auto; /* Centrar la imagen */
+  max-width: 300px; /* Ajustar el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Estilos específicos para centrar el video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilos específicos para el género */
+.genero {
+  font-weight: bold;
+  color: #007BFF;
+  font-size: 1.2em;
+}
+
+/* Estilos para los botones */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}

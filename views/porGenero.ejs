@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Bandas por Genero</title>
+</head>
+<body>
+    <h1>Bandas de Género: <%= bandas[0].genero %></h1>
+    <ul>
+      <% bandas.forEach(banda => { %>
+        <li>
+          <a href="/bandas/<%= banda.id %>">
+            <img src="/<%= banda.cover %>" alt="<%= banda.nombre %>">
+            <p><%= banda.nombre %></p>
+          </a>
+        </li>
+      <% }) %>
+    </ul>
+    <div class="button-container">
+        <a href="/bandas" class="button">Volver a la lista de bandas</a>
+    </div>
+</body>
+</html>

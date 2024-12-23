@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Detalle Banda</title>
+</head>
+<body>
+    <h1><%= banda.nombre %></h1>
+  <div class="detalle-banda">
+    <img src="/<%= banda.cover %>" alt="<%= banda.nombre %>">
+  </div>
+  <p class="genero">Género: <a href="/bandas/genero/<%= banda.genero %>"><%= banda.genero %></a></p>
+  <p>Integrantes: <%= banda.integrantes %></p>
+  <h2>Mejores Canciones</h2>
+  <ul>
+    <% banda.topCanciones.forEach(cancion => { %>
+      <li><%= cancion %></li>
+    <% }) %>
+  </ul>
+  <h2>Video</h2>
+  <div class="video-container">
+    <iframe width="560" height="315" src="<%= banda.video %>" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="button-container">
+    <a href="/bandas" class="button">Volver a la lista de bandas</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Listado de Bandas</title>
+</head>
+<body>
+    <h1>Listado de Bandas</h1>
+  <ul>
+    <% bandas.forEach(banda => { %>
+      <li>
+        <a href="/bandas/<%= banda.id %>">
+          <img src="/<%= banda.cover %>" alt="<%= banda.nombre %>">
+          <p><%= banda.nombre %></p>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
